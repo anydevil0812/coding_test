@@ -1,7 +1,6 @@
 from collections import deque
 from math import ceil
 def solution(progresses, speeds):
-
     queue = deque()
     for i in range(len(speeds)):
         a = ceil((100 - progresses[i]) / speeds[i])
