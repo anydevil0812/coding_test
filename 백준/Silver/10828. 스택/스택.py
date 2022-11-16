@@ -1,26 +1,32 @@
-import sys
-n = int(sys.stdin.readline())
+from sys import stdin
+a = int(stdin.readline())
+answer = []
+stack = []
+for i in range(a):
+    b = stdin.readline().split()
 
-stack=[]
-for i in range(n):
-    command = sys.stdin.readline().split()
+    if b[0] == "push":
+        stack.append(b[1])
 
-    if command[0]=='push':
-        stack.append(command[1])
-    elif command[0]=='pop':
-        if len(stack)==0:
-            print(-1)
+    elif b[0] == "pop":
+        if len(stack) == 0:
+            answer.append(-1) 
         else:
-            print(stack.pop())
-    elif command[0] == 'size':
-        print(len(stack))
-    elif command[0] == 'empty':
-        if len(stack)==0:
-            print(1)
+            answer.append(stack.pop())
+    
+    elif b[0] == "size":
+        answer.append(len(stack))
+
+    elif b[0] == "empty":
+        if len(stack) == 0:
+            answer.append(1) 
         else:
-            print(0)
-    elif command[0] == 'top':
-        if len(stack)==0:
-            print(-1)
+            answer.append(0)
+
+    elif b[0] == "top":
+        if len(stack) == 0:
+            answer.append(-1) 
         else:
-            print(stack[-1])
+            answer.append(stack[-1])
+for j in answer:
+    print(j)
