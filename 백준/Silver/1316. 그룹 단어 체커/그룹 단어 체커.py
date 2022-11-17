@@ -10,8 +10,8 @@ for i in range(a):
         queue.append(b[j])
         reverse_queue.appendleft(b[j])
 
-    for k in range(len(queue)): #li=[h,a,p,p,y] 2, 4
-        first = queue.index(queue[k]) # 0,1 
+    for k in range(len(queue)): 
+        first = queue.index(queue[k])
         last = len(queue) - reverse_queue.index(queue[k])
         repeat = b.count(queue[k])
         if last - first != repeat:
