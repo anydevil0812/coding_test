@@ -1,0 +1,1 @@
+SELECT category, SUM(sales) AS total_sales FROM BOOK a INNER JOIN BOOK_SALES b WHERE a.book_id = b.book_id AND YEAR(b.sales_date) = 2022 AND MONTH(b.sales_date) = 01 GROUP BY category ORDER BY category ASC
