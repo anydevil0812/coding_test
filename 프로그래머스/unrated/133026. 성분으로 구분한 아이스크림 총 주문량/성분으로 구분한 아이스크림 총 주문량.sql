@@ -1,0 +1,1 @@
+SELECT ingredient_type, SUM(total_order) AS total_order FROM FIRST_HALF f INNER JOIN ICECREAM_INFO i WHERE f.flavor = i.flavor GROUP BY ingredient_type
