@@ -2,10 +2,11 @@ class Solution {
     boolean solution(String s) {
         int a = 0;
         int b = 0;
+        String string = s.toLowerCase();
         for(int i=0; i<s.length(); i++){
-            if(Character.toLowerCase(s.charAt(i)) == 'p'){
+            if(string.charAt(i) == 'p'){
                 a++;
-            } else if(Character.toLowerCase(s.charAt(i)) == 'y'){
+            } else if(string.charAt(i) == 'y'){
                 b++;
             }
         }
