@@ -1,10 +1,10 @@
 # [level 1] 문자열 다루기 기본 - 12918 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12918) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12918?language=java) 
 
 ### 성능 요약
 
-메모리: 10.2 MB, 시간: 0.01 ms
+메모리: 79.3 MB, 시간: 0.11 ms
 
 ### 구분
 
@@ -42,6 +42,10 @@
 </tr>
 </tbody>
       </table>
+<h5>문제가 잘 안풀린다면😢</h5>
+
+<p>힌트가 필요한가요? [코딩테스트 연습 힌트 모음집]으로 오세요! → <a href="https://school.programmers.co.kr/learn/courses/14743?itm_content=lesson12918" target="_blank" rel="noopener">클릭</a></p>
+
 <hr>
 
 <ul>
