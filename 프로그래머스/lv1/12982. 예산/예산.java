@@ -2,20 +2,20 @@ import java.util.*;
 
 public class Solution {
     public int solution(int[] d, int budget) {
-        List<Integer> a = new ArrayList<>();
+        ArrayList<Integer> li = new ArrayList<>();
         PriorityQueue<Integer> heap = new PriorityQueue<>();
-        for (int i = 0; i < d.length; i++) {
-            heap.offer(d[i]);
+        for(int i = 0; i < d.length; i++){
+            heap.add(d[i]);
         }
-        int b = 0;
-        while (!heap.isEmpty()) {
-            if (b + heap.peek() > budget) {
+        int n = 0;
+        for(int i = 0; i < d.length; i++){
+            if(n + heap.peek() > budget){
                 break;
             } else {
-                b += heap.poll();
-                a.add(b);
+                n += heap.poll();
+                li.add(n);
             }
         }
-        return a.size();
+        return li.size();
     }
 }
