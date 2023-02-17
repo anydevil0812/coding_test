@@ -2,8 +2,7 @@ import java.util.*;
 
 class Solution {
     public double solution(int[] arr) {
-        double sum = Arrays.stream(arr).sum();
-        double answer = sum / arr.length;
+        double answer = Arrays.stream(arr).average().getAsDouble();
         return answer;
     }
 }
