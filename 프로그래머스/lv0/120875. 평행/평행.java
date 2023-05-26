@@ -2,13 +2,14 @@ import java.lang.Math;
 
 class Solution {
     public int solution(int[][] dots) {
-        double i = incline(dots[0], dots[1]);
-        double j = incline(dots[2], dots[3]);
-        if(i == j){
+        if (incline(dots[0], dots[1]) == incline(dots[2], dots[3])){
             return 1;
-        } else {
-            return 0;
+        } else if (incline(dots[0], dots[2]) == incline(dots[1], dots[3])){
+            return 1;
+        } else if (incline(dots[0], dots[3]) == incline(dots[1], dots[2])){
+            return 1;
         }
+        return 0;
     }
     
     public double incline(int[] a, int[] b) {
