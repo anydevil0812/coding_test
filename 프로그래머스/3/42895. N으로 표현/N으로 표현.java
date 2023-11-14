@@ -10,6 +10,7 @@ class Solution {
         
         for(int j = 2; j <= 8; j++){
             Set<Integer> countSet = li.get(j);
+            countSet.add(Integer.parseInt(String.valueOf(N).repeat(j)));
             
             for(int k = 1; k <= j; k++){
                 Set<Integer> set1 = li.get(k);
@@ -30,7 +31,6 @@ class Solution {
                     }
                 }   
             }
-            countSet.add(Integer.parseInt(String.valueOf(N).repeat(j)));
         }
         
         for(Set<Integer> set : li){
