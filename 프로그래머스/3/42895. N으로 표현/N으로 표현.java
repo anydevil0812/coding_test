@@ -19,9 +19,13 @@ class Solution {
                     for(int num2 : set2){
                         countSet.add(num1 + num2);
                         countSet.add(num1 - num2);
+                        countSet.add(num2 - num1);
                         countSet.add(num1 * num2);
-                        if(num1 != 0 && num2 != 0){
+                        if(num2 != 0){
                             countSet.add(num1 / num2);
+                        }
+                        if(num1 != 0){
+                            countSet.add(num2 / num1);
                         }
                     }
                 }   
